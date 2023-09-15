@@ -11,15 +11,27 @@ class Exercise extends Model
     protected $rows = [
         [
             'title' => 'Pflaumen pflücken',
+            'reps' => '2x 12',
         ],
         [
             'title' => 'Winkende Füße',
+            'reps' => '2x 30sek',
         ],
         [
             'title' => 'Krokodil',
+            'reps' => '2x 10',
         ],
         [
             'title' => 'Plank',
+            'reps' => '2x 30sek',
+        ],
+        [
+            'title' => 'Sitzende Drehung',
+            'reps' => '2x 12',
+        ],
+        [
+            'title' => 'Sitzende Verneigung',
+            'reps' => '2x 30sek',
         ],
     ];
 }
