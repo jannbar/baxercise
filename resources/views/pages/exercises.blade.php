@@ -13,7 +13,12 @@ $exercises = computed(function () {
     @volt
         <ul>
             @foreach ($this->exercises as $exercise)
-                <li>{{ $exercise->title }} ({{ $exercise->reps }})</li>
+                <li>
+                    <span>{{ $exercise->title }} ({{ $exercise->reps }})</span>
+                    @if ($exercise->description)
+                        <span style="display: block"><small>{{ $exercise->description }}</small></span>
+                    @endif
+                </li>
             @endforeach
         </ul>
     @endvolt
