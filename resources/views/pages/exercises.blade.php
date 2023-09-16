@@ -11,15 +11,6 @@ $exercises = computed(function () {
     <h2>Alle Übungen</h2>
 
     @volt
-        <ul>
-            @foreach ($this->exercises as $exercise)
-                <li>
-                    <span>{{ $exercise->title }} ({{ $exercise->reps }})</span>
-                    @if ($exercise->description)
-                        <span style="display: block"><small>{{ $exercise->description }}</small></span>
-                    @endif
-                </li>
-            @endforeach
-        </ul>
+        <x-exercises :exercises="$this->exercises" />
     @endvolt
 </x-layout>
